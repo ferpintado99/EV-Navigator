@@ -1,7 +1,7 @@
 # EV-Navigator Microservice
 EV-Navigator is an innovative microservice solution for EV owners to find the best charging stations near their destinations. It merges multiple external services for data on road conditions, weather and charging availability. The project estimates state of charge at each station. It includes Docker setup and comprehensive documentation.
 
-## Navigator+API+Database: EV Charging Station Finder
+## Microservice: 3 docker containers: Navigator + API +Database
 
 ## Features
 - Real-time data integration for weather, road conditions, and charging stations.
@@ -16,7 +16,7 @@ EV-Navigator is an innovative microservice solution for EV owners to find the be
   - `main.py`: Main application logic.
   - `Dockerfile`: Dockerfile for the application.
   - `requirements.txt`: Required Python packages.
-- `api/`: Folder containing the main application.
+- `api/`: Folder containing the API.
   - `api.py`: API server code.
   - `Dockerfile`: Dockerfile for the application.
   - `requirements.txt`: Required Python packages.
