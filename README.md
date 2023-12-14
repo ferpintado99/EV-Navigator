@@ -44,7 +44,8 @@ Send a POST request with the following JSON payload structure:
 - Python
 - MySQL
 - Docker
-- Various APIs (Nominatim, Open-Meteo, Open Charge Map, Bing Maps)
+- FastAPI
+- External APIs (Nominatim, Open-Meteo, Open Charge Map, Bing Maps)
 
 ### Dependencies
 
