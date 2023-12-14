@@ -1,0 +1,9 @@
+geopy==2.2.0
+requests==2.26.0
+mysql-connector-python==8.0.26
+beautifulsoup4==4.9.3
+colorama==0.4.4
+fastapi==0.68.0
+uvicorn==0.15.0
+python-dotenv==0.19.2
+

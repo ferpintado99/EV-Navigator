@@ -1,0 +1,40 @@
+version: '3.8'  # Docker Compose file version specification
+
+services:
+  # API Service Configuration
+  api:
+    build: ./api  # Build context for the API Docker image
+    ports:
+      - "8002:8000"  # Expose container port 8000 on host port 8002
+    depends_on:
+      - db  # Define dependency on the database service
+    environment:
+      - CORS_ORIGINS=http://localhost:3000,http://127.0.0.1:3000  # Set CORS origins
+      - NAVIGATOR_URL=http://navigator:8001/calculate_route  # URL for Navigator service
+
+  # Navigator Service Configuration
+  navigator:
+    build: ./navigator  # Build context for the Navigator Docker image
+    ports:
+      - "8003:8001"  # Expose container port 8001 on host port 8003
+    depends_on:
+      - db  # Define dependency on the database service
+    environment:
+      - DATABASE_URL=mysql://root:password@db/ev_database  # Database connection string
+      
+
+  # Database Service Configuration
+  db:
+    image: mysql:5.7  # Use MySQL 5.7 image
+    ports:
+      - "3307:3306"  # Expose MySQL port 3306 on host port 3307
+    environment:
+      - MYSQL_DATABASE=ev_database  # MySQL database name
+      - MYSQL_ROOT_PASSWORD=password  # MySQL root password
+    volumes:
+      - db_data:/var/lib/mysql  # Persistent volume for MySQL data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql  # SQL script for database initialization
+
+volumes:
+  db_data:  # Define a named volume for database persistence
+
