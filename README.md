@@ -1,7 +1,8 @@
 # EV-Navigator Microservice
 EV-Navigator is an innovative microservice solution for EV owners to find the best charging stations near their destinations. It merges multiple external services for data on road conditions, weather and charging availability. The project estimates state of charge at each station. It includes Docker setup and comprehensive documentation.
 
-## Microservice: 3 docker containers: Navigator + API +Database
+## 3 docker containers: Navigator + API + Database
+![Alt text]("C:\Users\nando\Downloads\Captura de pantalla 2023-12-08 124037.png")
 
 ## Features
 
@@ -12,7 +13,7 @@ EV-Navigator is an innovative microservice solution for EV owners to find the be
 ## Setup
 1. Clone the repository.
 2. Use `docker-compose up` to start the services.
-3. Send a POST request to the API with necessary parameters.
+3. Send a POST request to the API at "http://localhost:8002/process_data" with necessary parameters.
 
 ## Usage
 Send a POST request with the following JSON payload structure:
@@ -66,8 +67,10 @@ All Python package dependencies are listed in `requirements.txt` and can be inst
 pip install -r requirements.txt
 ```
 ### Authors
-Fernando Pintado - Initial work - YourGitHub
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+- **Fernando Pintado** - *Initial Creator and Developer* - [Github Profile](https://github.com/ferpintado99)
+
+### License
+This project is licensed under the MIT License. For more details, please refer to the [LICENSE](https://github.com/ferpintado99/EV-Navigator/blob/main/LICENSE) file in the repository.
+
 
 
