@@ -1,5 +1,5 @@
 # EV-Navigator Microservice
-**EV-Navigator** microservice orchestrates the search for optimal EV charging stations around the user's destination.The microservice is composed by 3 main components: Navigator (main code), built-in API (user interaction) and Database (storage of EV parameters), each in their own docker container. The microservice also integrates with external APIs to deliver real-time road, weather, elevation, and charging data, while precisely estimating your Electric Vehicle's (EV) State of Charge (SoC).
+**EV (Electric Vehicle)-Navigator** microservice orchestrates the search for optimal EV charging stations around the user's destination.The microservice is composed by 3 main components: Navigator (main code), built-in API (user interaction) and Database (storage of EV parameters), each in their own docker container. The microservice also integrates with external APIs to deliver real-time road, weather, elevation, and charging data, while precisely estimating your EV's State of Charge (SoC).
 
 ## 3 docker containers: Navigator + API + Database
 
