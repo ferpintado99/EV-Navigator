@@ -7,6 +7,9 @@ The microservice is composed by 3 main components:
 - **Built-in API** (user interaction)
 - **Database** (storage of EV parameters)
 
+![Navigator Microservice Diagram](EV_Navigator/Navigator_Microservice_Diagram.png)
+
+
 Each component is housed in its own Docker container. The microservice also integrates with external APIs to deliver road, weather, elevation, and charging data, while precisely estimating your EV's State of Charge (SoC).
 
 
