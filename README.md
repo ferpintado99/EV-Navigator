@@ -21,10 +21,10 @@ Send a POST request with the following JSON payload structure:
 {
   "origin_location": "CityA",
   "destination_location": "CityB",
-  "max_radius": 50 "in kilometres",
-  "ev_model": "ModelName eg Nissan Leaf",
+  "max_radius": 50 ,
+  "ev_model": "Nissan Leaf",
   "initial_SOC": 80,
-  "fast_charging_priority": true/false
+  "fast_charging_priority": true
 }
 
 ### How It Works
