@@ -4,22 +4,10 @@ EV-Navigator is an innovative microservice solution for EV owners to find the be
 ## Microservice: 3 docker containers: Navigator + API +Database
 
 ## Features
-- Real-time data integration for weather, road conditions, and charging stations.
-- Estimations of SoC upon arrival at each station.
-- Docker configuration for easy deployment.
 
-### Repository Structure
-
-- `docker-compose.yml`: Docker Compose file to orchestrate the containers.
-- `init.sql`: SQL file to initialize the database.
-- `navigator/`: Folder containing the main application.
-  - `main.py`: Main application logic.
-  - `Dockerfile`: Dockerfile for the application.
-  - `requirements.txt`: Required Python packages.
-- `api/`: Folder containing the API.
-  - `api.py`: API server code.
-  - `Dockerfile`: Dockerfile for the application.
-  - `requirements.txt`: Required Python packages.
+- Integrates with external APIs for road, weather, elevation and charging station data.
+- Estimates the State of Charge (SoC) for EVs.
+- Utilizes Docker for simplified orchestration of services.
 
 ## Setup
 1. Clone the repository.
@@ -50,8 +38,20 @@ Send a POST request with the following JSON payload structure:
 6. **Elevation**: Uses the Bing Maps API to calculate elevation changes along the route.
 7. **Walking Distance**: Calculates the walking distance and time from each station to the destination.
 
+### Repository Structure
 
-### Technologies Used
+- `docker-compose.yml`: Docker Compose file to orchestrate the containers.
+- `init.sql`: SQL file to initialize the database.
+- `navigator/`: Folder containing the main application.
+  - `main.py`: Main application logic.
+  - `Dockerfile`: Dockerfile for the application.
+  - `requirements.txt`: Required Python packages.
+- `api/`: Folder containing the API.
+  - `api.py`: API server code.
+  - `Dockerfile`: Dockerfile for the application.
+  - `requirements.txt`: Required Python packages.
+
+### Built With
 
 - Python
 - MySQL
@@ -65,3 +65,9 @@ All Python package dependencies are listed in `requirements.txt` and can be inst
 ```bash
 pip install -r requirements.txt
 ```
+### Authors
+Fernando Pintado - Initial work - YourGitHub
+License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+
