@@ -55,7 +55,7 @@ All Python package dependencies are listed in `requirements.txt` and can be inst
 pip install -r requirements.txt
 ```
 ### Author
-- **Fernando Pintado** - *Initial Creator and Developer* - [Github Profile](https://github.com/ferpintado99)
+**Fernando Pintado** - *Initial Creator and Developer* - [Github Profile](https://github.com/ferpintado99)
 
 ### License
 This project is licensed under the MIT License. For more details, please refer to the [LICENSE](https://github.com/ferpintado99/EV-Navigator/blob/main/LICENSE) file in the repository.
