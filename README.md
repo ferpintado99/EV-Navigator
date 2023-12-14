@@ -2,10 +2,8 @@
 EV-Navigator is an innovative microservice solution for EV owners to find the best charging stations near their destinations. It merges multiple external services for data on road conditions, weather and charging availability. The project estimates state of charge at each station. It includes Docker setup and comprehensive documentation.
 
 ## 3 docker containers: Navigator + API + Database
-![Alt text]("C:\Users\nando\Downloads\Captura de pantalla 2023-12-08 124037.png")
 
 ## Features
-
 - Integrates with external APIs for road, weather, elevation and charging station data.
 - Estimates the State of Charge (SoC) for EVs.
 - Utilizes Docker for simplified orchestration of services.
@@ -26,18 +24,7 @@ Send a POST request with the following JSON payload structure:
   "initial_SOC": 80,
   "fast_charging_priority": true
 }
-
-### How It Works
-
-#### Data Collection
-
-1. **User Inputs**: Collects origin, destination, EV model, and other parameters.
-2. **Geolocation**: Uses the Nominatim API to get coordinates for the entered locations.
-3. **Weather**: Fetches current temperature using the Open-Meteo API.
-4. **Charging Stations**: Uses the Open Charge Map API to find available charging stations within a specified radius.
-5. **Route Information**: Uses the Bing Maps API to get route details between the origin and each charging station.
-6. **Elevation**: Uses the Bing Maps API to calculate elevation changes along the route.
-7. **Walking Distance**: Calculates the walking distance and time from each station to the destination.
+```
 
 ### Repository Structure
 
