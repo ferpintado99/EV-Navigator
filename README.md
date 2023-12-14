@@ -7,7 +7,7 @@ The microservice is composed by 3 main components:
 - **Built-in API** (user interaction)
 - **Database** (storage of EV parameters)
 
-![Navigator Microservice Diagram](EV-Navigator/Navigator.png)
+![Navigator Microservice Diagram](Navigator.png)
 
 
 
